@@ -115,7 +115,7 @@ class Client:
             tx_params['maxFeePerGas'] = max_fee_per_gas
 
         else:
-            tx_params['gasPrice'] = self.w3.eth.gas_price
+            tx_params['gasPrice'] = 1000000000
 
         if value:
             tx_params['value'] = value
