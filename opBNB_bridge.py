@@ -40,7 +40,7 @@ class Bridge:
             success_tx = self.client.verif_tx(tx)
 
             if success_tx:
-                logger.info(f"https://opbnbscan.com/tx/{tx.hex()}")
+                logger.info(f"https://bscscan.com/tx/{tx.hex()}")
                 logger.success(f'[{self.client.address}][opBNB Bridge] Successfully bridge to opBNB')
             else:
                 logger.error(f'[{self.client.address}][opBNB Bridge] bridge error to opBNB')
