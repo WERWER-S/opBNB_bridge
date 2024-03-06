@@ -4,8 +4,11 @@ from pathlib import Path
 
 PAUSA_MAX = 30
 PAUSA_MIN = 10
-# Создаем объект Path для директории
-directory_path = Path("C:/Users/NAME/Desktop/opBNB bridge") #Your path to file
+
+if getattr(sys, 'frozen', False):
+    directory_path = Path(sys.executable).parent.absolute()
+else:
+    directory_path = Path(__file__).parent.parent.absolute()
 
 absolute_path = directory_path.absolute()
 
