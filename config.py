@@ -13,7 +13,7 @@ else:
 
 absolute_path = directory_path.absolute()
 
-ABIS_DIR = os.path.join(absolute_path, 'abis')
+ABIS_DIR = os.path.join(absolute_path, 'opBNB_bridge', 'abis')
 
 TOKEN_ABI = os.path.join(ABIS_DIR, 'token.json')
 BRIDGE_ABI = os.path.join(ABIS_DIR, 'bridge.json')
